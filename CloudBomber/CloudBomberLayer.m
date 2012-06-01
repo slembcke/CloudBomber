@@ -32,7 +32,9 @@
 #import "Missile.h"
 #import "Box.h"
 
-#define DOWNSAMPLE 4.0
+// Downsample the sample buffer so it can be read back and marched faster.
+// Don't downsample too much though or you can end up with aliasing artifacts.
+#define DOWNSAMPLE 3.0
 
 static const ccColor4B SKY_COLOR = {30, 66, 78, 255};
 

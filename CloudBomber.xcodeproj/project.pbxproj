@@ -11,8 +11,10 @@
 		D35D81C6157572A400A6696D /* CloudBomberLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = D35D81C5157572A400A6696D /* CloudBomberLayer.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		D37893EB15769BCD006CBEE8 /* libChipmunkPro-iPhone.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D37893E915769BCD006CBEE8 /* libChipmunkPro-iPhone.a */; };
 		D37893ED15769BFD006CBEE8 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D37893EC15769BFD006CBEE8 /* ImageIO.framework */; };
-		D38FE0B715794E1E00E47812 /* Default.psd in Resources */ = {isa = PBXBuildFile; fileRef = D38FE0B515794E1E00E47812 /* Default.psd */; };
-		D38FE0B815794E1E00E47812 /* Icon.psd in Resources */ = {isa = PBXBuildFile; fileRef = D38FE0B615794E1E00E47812 /* Icon.psd */; };
+		D38FE0C61579503D00E47812 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = D38FE0C21579503D00E47812 /* Default.png */; };
+		D38FE0C71579503D00E47812 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D38FE0C31579503D00E47812 /* Default@2x.png */; };
+		D38FE0C81579503D00E47812 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = D38FE0C41579503D00E47812 /* Icon.png */; };
+		D38FE0C91579503D00E47812 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D38FE0C51579503D00E47812 /* Icon@2x.png */; };
 		D392E4E21579233A00D47867 /* BoxHappy.psd in Resources */ = {isa = PBXBuildFile; fileRef = D392E4D91579233A00D47867 /* BoxHappy.psd */; };
 		D392E4E31579233A00D47867 /* BoxUpset.psd in Resources */ = {isa = PBXBuildFile; fileRef = D392E4DA1579233A00D47867 /* BoxUpset.psd */; };
 		D392E4E41579233A00D47867 /* Cloud.psd in Resources */ = {isa = PBXBuildFile; fileRef = D392E4DB1579233A00D47867 /* Cloud.psd */; };
@@ -241,8 +243,10 @@
 		D37893E915769BCD006CBEE8 /* libChipmunkPro-iPhone.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libChipmunkPro-iPhone.a"; sourceTree = "<group>"; };
 		D37893EA15769BCD006CBEE8 /* ObjectiveChipmunk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjectiveChipmunk.h; sourceTree = "<group>"; };
 		D37893EC15769BFD006CBEE8 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
-		D38FE0B515794E1E00E47812 /* Default.psd */ = {isa = PBXFileReference; lastKnownFileType = file; name = Default.psd; path = Resources/Default.psd; sourceTree = "<group>"; };
-		D38FE0B615794E1E00E47812 /* Icon.psd */ = {isa = PBXFileReference; lastKnownFileType = file; name = Icon.psd; path = Resources/Icon.psd; sourceTree = "<group>"; };
+		D38FE0C21579503D00E47812 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = Resources/Default.png; sourceTree = "<group>"; };
+		D38FE0C31579503D00E47812 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "Resources/Default@2x.png"; sourceTree = "<group>"; };
+		D38FE0C41579503D00E47812 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon.png; path = Resources/Icon.png; sourceTree = "<group>"; };
+		D38FE0C51579503D00E47812 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon@2x.png"; path = "Resources/Icon@2x.png"; sourceTree = "<group>"; };
 		D392E4D91579233A00D47867 /* BoxHappy.psd */ = {isa = PBXFileReference; lastKnownFileType = file; path = BoxHappy.psd; sourceTree = "<group>"; };
 		D392E4DA1579233A00D47867 /* BoxUpset.psd */ = {isa = PBXFileReference; lastKnownFileType = file; path = BoxUpset.psd; sourceTree = "<group>"; };
 		D392E4DB1579233A00D47867 /* Cloud.psd */ = {isa = PBXFileReference; lastKnownFileType = file; path = Cloud.psd; sourceTree = "<group>"; };
@@ -749,8 +753,10 @@
 		D3AAFBDB156F22DD00C67169 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				D38FE0B515794E1E00E47812 /* Default.psd */,
-				D38FE0B615794E1E00E47812 /* Icon.psd */,
+				D38FE0C21579503D00E47812 /* Default.png */,
+				D38FE0C31579503D00E47812 /* Default@2x.png */,
+				D38FE0C41579503D00E47812 /* Icon.png */,
+				D38FE0C51579503D00E47812 /* Icon@2x.png */,
 				D3AAFBDE156F22DD00C67169 /* fps_images.png */,
 				D3AAFBE0156F22DD00C67169 /* fps_images-hd.png */,
 				D3AAFBE2156F22DD00C67169 /* fps_images-ipadhd.png */,
@@ -1299,8 +1305,10 @@
 				D392E4E81579233A00D47867 /* Missile.psd in Resources */,
 				D392E4E91579233A00D47867 /* Scorch.psd in Resources */,
 				D392E4EA1579233A00D47867 /* Terrain.psd in Resources */,
-				D38FE0B715794E1E00E47812 /* Default.psd in Resources */,
-				D38FE0B815794E1E00E47812 /* Icon.psd in Resources */,
+				D38FE0C61579503D00E47812 /* Default.png in Resources */,
+				D38FE0C71579503D00E47812 /* Default@2x.png in Resources */,
+				D38FE0C81579503D00E47812 /* Icon.png in Resources */,
+				D38FE0C91579503D00E47812 /* Icon@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
