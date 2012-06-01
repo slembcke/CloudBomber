@@ -144,11 +144,11 @@ DrawConstraint(cpConstraint *constraint, HMVectorNode *renderer)
 
 -(void) draw;
 {
-	[super clear];
 	cpSpaceEachShape(_spacePtr, (cpSpaceShapeIteratorFunc)DrawShape, self);
 	cpSpaceEachConstraint(_spacePtr, (cpSpaceConstraintIteratorFunc)DrawConstraint, self);
 	
 	[super draw];
+	[super clear];
 }
 
 + debugNodeForChipmunkSpace:(ChipmunkSpace *)space;

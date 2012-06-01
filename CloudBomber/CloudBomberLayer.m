@@ -192,7 +192,12 @@ enum Z_ORDER {
 
 -(void)update:(ccTime)dt
 {
+#if TARGET_IPHONE_SIMULATOR
+	CMAcceleration gravity = {-1, 0, 0};
+#else
 	CMAcceleration gravity = motionManager.accelerometerData.acceleration;
+#endif
+	
 	space.gravity = cpvmult(cpv(-gravity.y, gravity.x), 400.0f);
 	
 	// Update the physics
