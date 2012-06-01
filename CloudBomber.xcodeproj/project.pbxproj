@@ -15,6 +15,8 @@
 		D38FE0C71579503D00E47812 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D38FE0C31579503D00E47812 /* Default@2x.png */; };
 		D38FE0C81579503D00E47812 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = D38FE0C41579503D00E47812 /* Icon.png */; };
 		D38FE0C91579503D00E47812 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D38FE0C51579503D00E47812 /* Icon@2x.png */; };
+		D38FE0CF157967D000E47812 /* libarclite_iphoneos.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D38FE0CE157967D000E47812 /* libarclite_iphoneos.a */; };
+		D38FE0D21579688900E47812 /* libarclite_iphonesimulator.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D38FE0D11579688900E47812 /* libarclite_iphonesimulator.a */; };
 		D392E4E21579233A00D47867 /* BoxHappy.psd in Resources */ = {isa = PBXBuildFile; fileRef = D392E4D91579233A00D47867 /* BoxHappy.psd */; };
 		D392E4E31579233A00D47867 /* BoxUpset.psd in Resources */ = {isa = PBXBuildFile; fileRef = D392E4DA1579233A00D47867 /* BoxUpset.psd */; };
 		D392E4E41579233A00D47867 /* Cloud.psd in Resources */ = {isa = PBXBuildFile; fileRef = D392E4DB1579233A00D47867 /* Cloud.psd */; };
@@ -247,6 +249,8 @@
 		D38FE0C31579503D00E47812 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "Resources/Default@2x.png"; sourceTree = "<group>"; };
 		D38FE0C41579503D00E47812 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon.png; path = Resources/Icon.png; sourceTree = "<group>"; };
 		D38FE0C51579503D00E47812 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon@2x.png"; path = "Resources/Icon@2x.png"; sourceTree = "<group>"; };
+		D38FE0CE157967D000E47812 /* libarclite_iphoneos.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libarclite_iphoneos.a; path = Platforms/iPhoneOS.platform/Developer/usr/lib/arc/libarclite_iphoneos.a; sourceTree = DEVELOPER_DIR; };
+		D38FE0D11579688900E47812 /* libarclite_iphonesimulator.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libarclite_iphonesimulator.a; path = usr/lib/arc/libarclite_iphonesimulator.a; sourceTree = DEVELOPER_DIR; };
 		D392E4D91579233A00D47867 /* BoxHappy.psd */ = {isa = PBXFileReference; lastKnownFileType = file; path = BoxHappy.psd; sourceTree = "<group>"; };
 		D392E4DA1579233A00D47867 /* BoxUpset.psd */ = {isa = PBXFileReference; lastKnownFileType = file; path = BoxUpset.psd; sourceTree = "<group>"; };
 		D392E4DB1579233A00D47867 /* Cloud.psd */ = {isa = PBXFileReference; lastKnownFileType = file; path = Cloud.psd; sourceTree = "<group>"; };
@@ -604,6 +608,8 @@
 				D3AAFBD7156F22DD00C67169 /* CoreGraphics.framework in Frameworks */,
 				D3AAFBD9156F22DD00C67169 /* GameKit.framework in Frameworks */,
 				D37893EB15769BCD006CBEE8 /* libChipmunkPro-iPhone.a in Frameworks */,
+				D38FE0CF157967D000E47812 /* libarclite_iphoneos.a in Frameworks */,
+				D38FE0D21579688900E47812 /* libarclite_iphonesimulator.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -713,6 +719,8 @@
 		D3AAFBC7156F22DD00C67169 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D38FE0D11579688900E47812 /* libarclite_iphonesimulator.a */,
+				D38FE0CE157967D000E47812 /* libarclite_iphoneos.a */,
 				D3E5E4AD157851E40096C8B0 /* CoreMotion.framework */,
 				D37893EC15769BFD006CBEE8 /* ImageIO.framework */,
 				D3AAFBC8156F22DD00C67169 /* QuartzCore.framework */,
@@ -1517,6 +1525,8 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/ChipmunkPro-iPhone-Trial\"",
+					"\"$(DEVELOPER_DIR)/Platforms/iPhoneOS.platform/Developer/usr/lib/arc\"",
+					"\"$(DEVELOPER_DIR)/usr/lib/arc\"",
 				);
 				OTHER_LDFLAGS = (
 					"-lz",
@@ -1541,6 +1551,8 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/ChipmunkPro-iPhone-Trial\"",
+					"\"$(DEVELOPER_DIR)/Platforms/iPhoneOS.platform/Developer/usr/lib/arc\"",
+					"\"$(DEVELOPER_DIR)/usr/lib/arc\"",
 				);
 				OTHER_LDFLAGS = (
 					"-lz",
