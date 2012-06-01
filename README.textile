@@ -14,6 +14,8 @@ Chipmunk Pro allows you to trace images (or procedural functions) to turn them i
 
 While it's somewhat expensive to transfer the pixels from OpenGL back to the CPU where Chipmunk can use them. This is too slow to perform every frame, but works perfectly fine at load time and works pretty good if you only need to change the terrain once in a while.
 
+The holes in the terrain are cut by sprites drawn over it with a multiply blending mode. When composited together in the render texture, they multiply the destination alpha to 0 in their centers where they are transparent, and darken around the edges of the hole where they are opaque and black. It's a pretty easy compositing trick to do. Then all you have to do is blit the render texture to the screen (or the sampler).
+
 h2. What's included:
 
 A number of handy utility classes you can use in your own code:
