@@ -87,7 +87,7 @@ MissileVelocityUpdate(cpBody *cBody, cpVect gravity, cpFloat damping, cpFloat dt
 		
 		self.chipmunkObjects = [NSArray arrayWithObjects:body, shape, nil];
 		
-		self.sprite = [ChipmunkSprite spriteWithFile:@"Missile.png"];
+		self.sprite = [CCPhysicsSprite spriteWithFile:@"Missile.png"];
 		self.sprite.chipmunkBody = self.body;
 	}
 	

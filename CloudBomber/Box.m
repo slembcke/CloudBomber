@@ -53,7 +53,7 @@
 		
 		self.chipmunkObjects = [NSArray arrayWithObjects:self.body, self.shape, nil];
 		
-		self.sprite = [ChipmunkSprite spriteWithFile:@"BoxHappy.png"];
+		self.sprite = [CCPhysicsSprite spriteWithFile:@"BoxHappy.png"];
 		self.sprite.chipmunkBody = self.body;
 		
 		leftEye = [[CCSprite alloc] initWithFile:@"Eye.png"];

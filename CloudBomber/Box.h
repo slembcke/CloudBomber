@@ -19,10 +19,8 @@
  * SOFTWARE.
  */
 
-#import "cocos2d.h"
 #import "ObjectiveChipmunk.h"
-
-#import "ChipmunkSprite.h"
+#import "cocos2d.h"
 
 // Implementing <ChipmunkObject> means that you can add this
 // object to a space with a single [space add:missile] call.
@@ -33,7 +31,7 @@
 
 @property(nonatomic, retain) ChipmunkBody *body;
 @property(nonatomic, retain) ChipmunkShape *shape;
-@property(nonatomic, retain) ChipmunkSprite *sprite;
+@property(nonatomic, retain) CCPhysicsSprite *sprite;
 
 @property(nonatomic, retain) NSArray *chipmunkObjects;
 

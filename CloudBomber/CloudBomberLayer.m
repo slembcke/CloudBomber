@@ -24,7 +24,6 @@
 #import "CloudBomberLayer.h"
 #import "ChipmunkAutoGeometry.h"
 #import "ChipmunkGLRenderBufferSampler.h"
-#import "ChipmunkDebugNode.h"
 
 #import "Physics.h"
 
@@ -149,7 +148,7 @@ enum Z_ORDER {
 		}
 		
 		// Add a ChipmunkDebugNode to draw the space.
-		ChipmunkDebugNode *debugNode = [ChipmunkDebugNode debugNodeForChipmunkSpace:space];
+		CCPhysicsDebugNode *debugNode = [CCPhysicsDebugNode debugNodeForChipmunkSpace:space];
 		[self addChild:debugNode z:Z_DEBUG];
 		debugNode.visible = FALSE;
 		
@@ -255,11 +254,11 @@ enum Z_ORDER {
 	
 }
 
--(void)scheduleBlockOnce:(void (^)(void))block delay:(ccTime)delay
-{
-	// There really needs to be a 
-	[self.scheduler scheduleSelector:@selector(invoke) forTarget:[block copy] interval:0.0 paused:FALSE repeat:1 delay:delay];
-}
+//-(void)scheduleBlockOnce:(void (^)(void))block delay:(ccTime)delay
+//{
+//	[self.scheduler scheduleBlockForKey:<#(NSString *)#> target:<#(id)#> interval:<#(ccTime)#> repeat:<#(uint)#> delay:<#(ccTime)#> paused:<#(BOOL)#> block:<#^(ccTime dt)block#>
+//	[self.scheduler scheduleSelector:@selector(invoke) forTarget:[block copy] interval:0.0 paused:FALSE repeat:1 delay:delay];
+//}
 
 -(void)applyExplosionImpulses:(cpVect)origin
 {
@@ -280,7 +279,8 @@ enum Z_ORDER {
 		// Play with the boxes' emotions.
 		Box *box = body.data;
 		[box makeUpset];
-		[self scheduleBlockOnce:^{[box makeHappy];} delay:intensity*1.0];
+		[self.scheduler scheduleSelector:@selector(makeHappy) forTarget:box interval:0.0 repeat:1 delay:intensity paused:FALSE];
+//		[self scheduleBlockOnce:^{[box makeHappy];} delay:intensity*1.0];
 	}
 }
 
