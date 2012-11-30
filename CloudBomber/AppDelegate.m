@@ -17,7 +17,7 @@
 // And in iOS 6+ only, you can override it in the Root View controller in the "supportedInterfaceOrientations" method.
 // Only valid for iOS 6+. NOT VALID for iOS 4 / 5.
 -(NSUInteger)supportedInterfaceOrientations {
-	return UIInterfaceOrientationLandscapeRight;
+	return UIInterfaceOrientationMaskLandscapeRight;
 }
 
 // Supported orientations. Customize it for your own needs
