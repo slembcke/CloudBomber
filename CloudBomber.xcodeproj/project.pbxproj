@@ -157,10 +157,10 @@
 			fileType = pattern.proxy;
 			isEditable = 1;
 			outputFiles = (
-				"$(DERIVED_FILES_DIR)/$(INPUT_FILE_BASE).png",
-				"$(DERIVED_FILES_DIR)/$(INPUT_FILE_BASE)-hd.png",
+				"$(DERIVED_FILE_DIR)/$(INPUT_FILE_BASE).png",
+				"$(DERIVED_FILE_DIR)/$(INPUT_FILE_BASE)-hd.png",
 			);
-			script = "\"$PROJECT_DIR/Support/retinaconvert\" --dir \"$DERIVED_FILES_DIR\" --tag \"-hd\" \"$INPUT_FILE_PATH\"\n";
+			script = "\"$PROJECT_DIR/Support/retinaconvert\" --dir \"$DERIVED_FILE_DIR\" --tag \"-hd\" \"$INPUT_FILE_PATH\"";
 		};
 /* End PBXBuildRule section */
 
