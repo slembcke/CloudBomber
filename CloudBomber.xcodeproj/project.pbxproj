@@ -1359,6 +1359,7 @@
 				GCC_PREFIX_HEADER = CloudBomber/Prefix.pch;
 				HEADER_SEARCH_PATHS = "\"CloudBomber/libs/kazmath/include\"";
 				INFOPLIST_FILE = CloudBomber/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/CloudBomber/libs/ChipmunkPro-iPhone-Trial\"",
@@ -1384,6 +1385,7 @@
 				GCC_PREFIX_HEADER = CloudBomber/Prefix.pch;
 				HEADER_SEARCH_PATHS = "\"CloudBomber/libs/kazmath/include\"";
 				INFOPLIST_FILE = CloudBomber/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/CloudBomber/libs/ChipmunkPro-iPhone-Trial\"",
@@ -1410,6 +1412,7 @@
 				D3394444165ABB7F00941911 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D3AAFBBE156F22DD00C67169 /* Build configuration list for PBXProject "CloudBomber" */ = {
 			isa = XCConfigurationList;
