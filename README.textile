@@ -1,8 +1,22 @@
+h2. This Project has Moved!
+
+You can find the new project page on the [Chipmunk2D Website](https://chipmunk-physics.net/git/CloudBomber.html).
+
+To migrate an existing checkout, you can use the following command, or make a new checkout of the project from the new location.
+
+bc. git remote set-url origin https://chipmunk-physics.net/git/CloudBomber
+git fetch origin master
+git reset origin/master
+
+You may additionally need to run @git checkout .@ to cleanup the deleted files. *This will also discard your local changes if you have made any.*
+
+To read more about why this project moved, you can read about it in "PROJECT_HAS_MOVED.md":PROJECT_HAS_MOVED.md
+
+h1. CloudBomber
+
 p=. !http://files.slembcke.net/upshot/upshot_CloudBomber.png!
 
 "YouTube Video":http://www.youtube.com/watch?v=bAEBqjc8xwU
-
-h1. CloudBomber
 
 A Chipmunk Pro autogeometry / Cocos2D 2.0 example project where you play as an grumpy storm cloud that shoots nuclear missiles at a bunch of happy boxes on a lovely rolling landscape. Trust me. It makes perfect sense!
 
